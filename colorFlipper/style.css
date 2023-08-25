@@ -8,11 +8,12 @@
   border-radius: 5px;
 }
 
-.button-color,
-.button-background-color {
+.button-color {
   width: 150px;
   height: 24px;
   border: none;
   border-radius: 5px;
-  background-color: antiquewhite;
+}
+.button-color:hover {
+ cursor: pointer;
 }
