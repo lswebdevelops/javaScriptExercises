@@ -22,14 +22,22 @@ document.addEventListener("DOMContentLoaded", function() {
     button2.classList.add("button-minus-counter")
     div.appendChild(button2)
     button2.innerText = `- Count`
+    
+        const button3 = document.createElement("button")
+        button3.classList.add("button-plus-counter")
+        div.appendChild(button3)
+        button3.innerText = `Reset`
 
     const button = document.createElement("button")
     button.classList.add("button-plus-counter")
     div.appendChild(button)
     button.innerText = `+ Count`
        
+          
+       
     button.addEventListener("click", increaseCount)
     button2.addEventListener("click", decreaseCount)
+    button3.addEventListener("click", resetCount)
 })
 
 let count = 0;
@@ -42,6 +50,12 @@ function increaseCount() {
 
 const decreaseCount= () => {
     count --;
+    const span = document.querySelector('.span')
+    span.innerText = count
+}
+
+const resetCount = () => {
+    count = 0;
     const span = document.querySelector('.span')
     span.innerText = count
 }
