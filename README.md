@@ -1,3 +1,3 @@
 # javaScriptExercises
 
-Creating 40 javascript projects for funtamentals practive
+Creating 40 javascript projects for fundamentals practice
