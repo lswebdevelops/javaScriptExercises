@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const span =  document.createElement("span")
     paragraph.appendChild(span)
     span.classList = "span"
-    span.innerText=""
+    span.textContent="0"
     
     const div = document.createElement("div")
     divContainer.appendChild(div)
